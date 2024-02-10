@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Floating Picture on Hover</title>
+<style>
+.floating-image {
+  position: relative; /* Enable positioning */
+  width: 200px; /* Adjust width as needed */
+  height: 150px; /* Adjust height as needed */
+}
+
+.image-container {
+  display: inline-block; /* Allow stacking if needed */
+}
+
+.floating-image img {
+  transition: transform 0.3s ease-in-out; /* Smooth transition */
+}
+
+.floating-image:hover img {
+  transform: scale(1.1) translateY(-10px); /* Subtle zoom + slight upward lift */
+}
+</style>
+</head>
+<body>
+<div class="image-container">
+  <div class="floating-image">
+    <i>拂动起来</i><br>
+    <img src="image.png" alt="Floating Image">
+  </div>
+</div>
+</body>
+</html>
